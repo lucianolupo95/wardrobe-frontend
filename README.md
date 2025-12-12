@@ -1,24 +1,26 @@
-# Wardrobe – Backend
+# Wardrobe – Frontend
 
-API backend para una aplicación de gestión de vestuario personal.
+Frontend web para la aplicación Wardrobe, orientada a la gestión de un vestuario personal.
 
 ## Descripción
-Este proyecto expone una API REST para administrar prendas de ropa, categorías, estaciones y estados.
-Es un proyecto personal orientado a practicar diseño de APIs, modelado de datos y arquitectura backend.
+Este proyecto implementa la interfaz de usuario de la aplicación Wardrobe.
+Permite visualizar, crear, editar y gestionar prendas de ropa consumiendo una API REST.
+
+Es un proyecto personal enfocado en el desarrollo frontend moderno y la integración con un backend.
 
 ## Tecnologías
-- Go
-- Gin
-- PostgreSQL
+- SvelteKit
+- JavaScript
+- HTML / CSS
 
 ## Funcionalidades principales
-- CRUD de prendas
-- Modelo de datos relacional
-- Endpoints REST claros y simples
-- Soft delete y restauración de registros
+- Listado de prendas
+- Alta, edición y eliminación lógica
+- Formularios reactivos
+- Integración con API REST
 
 ## Estado del proyecto
 En desarrollo activo (work in progress).
 
 ## Objetivo
-Proyecto personal enfocado en mejorar habilidades de desarrollo backend, diseño de APIs y buenas prácticas.
+Proyecto personal para practicar desarrollo frontend, consumo de APIs y construcción de interfaces web simples y funcionales.
