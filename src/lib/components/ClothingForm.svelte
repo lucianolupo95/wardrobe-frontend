@@ -2,8 +2,7 @@
     import { createClothing } from "$lib/api";
     import { goto } from "$app/navigation";
 
-    // Props
-    export let mode = "create"; // "create" | "edit"
+    export let mode = "create";
 
     /** @type {{
      *   id?: number,
@@ -18,7 +17,6 @@
      */
     export let initial = null;
 
-    // Estado del formulario
     let name = "";
     let photoUrl = "";
     let seasonId = 1;
@@ -27,7 +25,6 @@
     let visible = true;
     let notes = "";
 
-    // Precargar datos si estamos en modo edit
     if (initial) {
         name = initial.name ?? "";
         photoUrl = initial.photoUrl ?? "";

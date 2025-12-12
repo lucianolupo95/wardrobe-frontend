@@ -6,7 +6,6 @@
     let loading = true;
     let error = null;
 
-    // Cargar datos al montar la página
     onMount(async () => {
         try {
             clothes = await getClothes();
@@ -40,8 +39,7 @@
 
 <h1>Ropa</h1>
 
-<!-- Botón para agregar -->
-<a href="/clothes/new">➕ Agregar prenda</a>
+<a href="/clothes/new">Agregar prenda</a>
 
 {#if loading}
     <p>Cargando ropa...</p>
@@ -60,15 +58,12 @@
                 — Category: {item.category_id}
                 — Status: {item.status_id}
 
-                <!-- Edit -->
                 <a href={`/clothes/${item.id}/edit`}>Editar</a>
 
-                <!-- Borrar -->
                 <button on:click={() => handleDelete(item.id)}>
                     Borrar
                 </button>
 
-                <!-- Restaurar -->
                 <button on:click={() => handleRestore(item.id)}>
                     Restaurar
                 </button>
